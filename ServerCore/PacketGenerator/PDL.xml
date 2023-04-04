@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PDL>
+  <packet name ="SC_BroadcastEnterGame">
+    <int name="playerId"/>
+    <float name ="posX"/>
+    <float name ="posY"/>
+    <float name ="posZ"/>
+  </packet>
+  <packet name ="CS_LeaveGame">
+  </packet>
+  <packet name ="SC_BroadcastLeaveGame">
+    <int name ="playerId"/>
+  </packet>
+  <packet name="SC_PlayerList">
+    <list name="player">
+      <bool name="isSelf"/>
+      <int name="playerId"/>
+      <float name ="posX"/>
+      <float name ="posY"/>
+      <float name ="posZ"/>
+    </list>
+  </packet>
+  <packet name ="CS_Move">
+    <float name ="posX"/>
+    <float name ="posY"/>
+    <float name ="posZ"/>
+  </packet>
+  <packet name ="SC_BroadcastMove">
+    <int name ="playerId"/>
+    <float name ="posX"/>
+    <float name ="posY"/>
+    <float name ="posZ"/>
+  </packet>
+  <packet name ="CS_Login">
+    <string name ="playername"/>
+  </packet>
+  <packet name ="SC_Login">
+    <int name ="playerId"/>
+    <string name ="playername"/>
+  </packet>
+</PDL>
